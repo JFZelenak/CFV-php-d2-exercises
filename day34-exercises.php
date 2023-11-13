@@ -51,14 +51,14 @@
 </head>
 <body>
     <div class="container">
-        <h2>php day 2 - exercises</h2>
+        <h3>php day 2 - exercises</h3>
 
-        <div class="border p-3">
-            <p>Exercise 1: Welcome Firstname Lastname</p>
+        <div class="border p-3 my-2 shadow">
+            <p id="ex1">Exercise 1: Welcome Firstname Lastname</p>
             <form action="day34-exercises.php" method ="POST">
                 Firstname: <input type="text"  name="fname" />
                 Lastname: <input type ="text" name="lname" />
-                <input  type="submit" name="submit1"  />
+                <input  type="submit" name="submit1" value="SEND" class="btn btn-success" />
             </form>
             <?php
             if( isset($_POST['submit1'])) {
@@ -75,32 +75,30 @@
             ?>
         </div>
 
-        <div class="border p-3">
-            <p>Exercise 2: Divide Number1 by Number2</p>
+        <div class="border p-3 my-2 shadow">
+            <p id="ex2">Exercise 2: Divide Number1 by Number2</p>
             <form action="day34-exercises.php" method ="POST">
                 First number: <input type="number" name="num1" />
                 Second number: <input type="number" name="num2" />
-                <input  type="submit" name="submit2"  />
+                <input  type="submit" name="submit2" value="SEND" class="btn btn-success" />
             </form>
             <?php
             if( isset($_POST['submit2'])) {
-                echo divide($_POST['num1'],$_POST['num2']);
+                echo $_POST['num1']." / ".$_POST['num2']." = ".divide($_POST['num1'],$_POST['num2']);
             }
             function divide($num1,$num2){
                 return $num1 / $num2;
             }
-
-            // echo divide(6,3);
             ?>
         </div>
 
-        <div class="border p-3">
-            <p>Exercise 3: Get Sum and Avg from three grades</p>
+        <div class="border p-3 my-2 shadow">
+            <p id="ex3">Exercise 3: Get Sum and Avg from three grades</p>
             <form action="day34-exercises.php" method ="POST">
                 Maths grade: <input type="number" name="mathsGrade" />
                 Physics grade: <input type="number" name="physicsGrade" />
                 English grade: <input type="number" name="englishGrade" />
-                <input  type="submit" name="submit3"  />
+                <input  type="submit" name="submit3" value="SEND" class="btn btn-success" />
             </form>
             <?php
             if( isset($_POST['submit3'])) {
@@ -121,13 +119,13 @@
             ?>
         </div>
 
-        <div class="border p-3">
-            <p>Exercise 4: Get area and volume of three values</p>
+        <div class="border p-3 my-2 shadow">
+            <p id="ex4">Exercise 4: Get area and volume of three values</p>
             <form action="day34-exercises.php" method ="POST">
                 width: <input type="number" name="width" />
                 length: <input type="number" name="length" />
                 height: <input type="number" name="height" />
-                <input  type="submit" name="submit4"  />
+                <input  type="submit" name="submit4" value="SEND" class="btn btn-success" />
             </form>
             <?php
             if( isset($_POST['submit4'])) {
@@ -148,11 +146,11 @@
             ?>
         </div>
 
-        <div class="border p-3">
-            <p>Exercise 5: Minutes to hours and minutes</p>
+        <div class="border p-3 my-2 shadow">
+            <p id="ex5">Exercise 5: Minutes to hours and minutes</p>
             <form action="day34-exercises.php" method ="POST">
                 minutes: <input type="number" name="minutes" />
-                <input  type="submit" name="submit5"  />
+                <input  type="submit" name="submit5" value="SEND" class="btn btn-success" />
             </form>
             <?php
             if( isset($_POST['submit5'])) {
@@ -170,14 +168,14 @@
             ?>
         </div>
 
-        <div class="border p-3">
-            <p>Exercise 6: fname, lname and age in 3 different divs</p>
+        <div class="border p-3 my-2 shadow">
+            <p id="ex6">Exercise 6: fname, lname and age in 3 different divs</p>
             <form action="day34-exercises.php" method ="POST">
                 Firstname: <input type="text" name="fname6" />
                 Lastname: <input type="text" name="lname6" />
                 Age: <input type="number" name="age6" />
                 Hobby: <input type="text" name="hobby6" />
-                <input  type="submit" name="submit6"  />
+                <input  type="submit" name="submit6" value="SEND" class="btn btn-success" />
             </form>
             <?php
             if( isset($_POST['submit6'])) {
@@ -213,11 +211,11 @@
             ?>
         </div>
 
-        <div class="border p-3">
-            <p>advanced exercise: °f to °c </p>
+        <div class="border p-3 my-2 shadow">
+            <p id="ex7">advanced exercise: °f to °c </p>
             <form action="day34-exercises.php" method ="POST">
                 degrees farenheit: <input type="number" name="farenheit" />
-                <input  type="submit" name="submit7"  />
+                <input  type="submit" name="submit7" value="SEND" class="btn btn-success" />
             </form>
             <?php
             if( isset($_POST['submit7'])) {
