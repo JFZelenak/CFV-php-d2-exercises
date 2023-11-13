@@ -214,7 +214,7 @@
         </div>
 
         <div class="border p-3">
-            <p>advanced exercise: f to c </p>
+            <p>advanced exercise: °f to °c </p>
             <form action="day34-exercises.php" method ="POST">
                 degrees farenheit: <input type="number" name="farenheit" />
                 <input  type="submit" name="submit7"  />
